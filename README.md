@@ -1,8 +1,8 @@
 # Apt module for Puppet
 
-Manages apt configuration under Debian or Ubuntu.
+**Manages apt configuration under Debian or Ubuntu.**
 
-_This module is provided by [Camptocamp_](http://www.camptocamp.com/)
+This module is provided by [Camptocamp](http://www.camptocamp.com/)
 
 ## Classes
 
