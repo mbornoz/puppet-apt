@@ -2,7 +2,7 @@
 
 Manages apt configuration under Debian or Ubuntu.
 
-This module is provided by [Camptocamp_](http://www.camptocamp.com/)
+_This module is provided by [Camptocamp_](http://www.camptocamp.com/)
 
 ## Classes
 
