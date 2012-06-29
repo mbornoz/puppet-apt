@@ -1,5 +1,10 @@
-define apt::ppa($key, $ppa="ppa", $ensure = present) {
-  apt::key { $key:
+define apt::ppa (
+  $key,
+  $ensure = present,
+  $ppa    ='ppa'
+) {
+
+  apt::key {$key:
     ensure => $ensure,
   }
 
@@ -11,7 +16,8 @@ define apt::ppa($key, $ppa="ppa", $ensure = present) {
     end %>")
 
   apt::sources_list {"${name}-${ppa_name}-${lsbdistcodename}":
-    ensure => $ensure,
-    content => template("apt/ppa-list.erb"),
+    ensure  => $ensure,
+    content => template('apt/ppa-list.erb'),
   }
+
 }

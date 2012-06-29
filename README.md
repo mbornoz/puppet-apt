@@ -25,6 +25,7 @@ Variables
 
   * apt::conf
   * apt::key
+  * apt::ppa
   * apt::preferences
   * apt::sources\_list
 
@@ -39,6 +40,14 @@ Variables
 
     apt::key {"A37E4CF5":
       source  => "http://dev.camptocamp.com/packages/debian/pub.key",
+    }
+
+### apt::ppa
+
+    apt::ppa {'chris-lea':
+      ensure => present,
+      key    => 'C7917B12',
+      ppa    => 'node.js'
     }
 
 ### apt::preferences
